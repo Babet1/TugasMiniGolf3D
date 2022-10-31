@@ -2158,7 +2158,7 @@ MonoBehaviour:
   camSensitivity: {x: 100, y: 100}
   shootForce: 100
   source: {fileID: 1627701572}
-  clip: {fileID: 8300000, guid: bd85afe6d70359a4ca334baeb33c0859, type: 3}
+  clip: {fileID: 8300000, guid: 1012c443f2293904bbf747b74c19d6ff, type: 3}
 --- !u!4 &472051591
 Transform:
   m_ObjectHideFlags: 0
@@ -2567,6 +2567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   lastPosition: {x: 0, y: 0, z: 0}
+  source: {fileID: 1627701572}
+  clip: {fileID: 8300000, guid: 86ee9d008ed84ae4a909c9db2a81b974, type: 3}
 --- !u!96 &704922890
 TrailRenderer:
   serializedVersion: 2
@@ -3328,6 +3330,8 @@ MonoBehaviour:
   gameOverText: {fileID: 442012982}
   player: {fileID: 472051590}
   hole: {fileID: 1607282817}
+  source: {fileID: 1627701572}
+  clip: {fileID: 8300000, guid: d1be27b22dd4a864db1ccb8aba247f58, type: 3}
 --- !u!4 &926529565
 Transform:
   m_ObjectHideFlags: 0
@@ -3533,7 +3537,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh48158
+  m_Name: pb_Mesh30694
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

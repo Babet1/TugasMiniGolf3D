@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         // shooting
         if(Input.GetMouseButton(0) && isShooting == true)
         {
-            source.PlayOneShot(clip);
+            
 
             var ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit; 
@@ -157,6 +157,8 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetMouseButtonUp(0) && isShooting)
         {
+            source.PlayOneShot(clip);
+
             ball.AddForce(forceDir*shootForce*forceFactor);
             shootCount+=1;
             shootCountText.text = "Shoot Count: " + shootCount;

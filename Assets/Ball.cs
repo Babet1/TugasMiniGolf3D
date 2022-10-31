@@ -13,6 +13,8 @@ public class Ball : MonoBehaviour
 
     [SerializeField ]Vector3 lastPosition;
     bool isTeleporting;
+    public AudioSource source;
+    public AudioClip clip;
 
     private void Awake()
     {
@@ -57,5 +59,6 @@ public class Ball : MonoBehaviour
         rb.isKinematic = true;
         this.transform.position = lastPosition;
         isTeleporting = false;
+        source.PlayOneShot(clip);
     }
 }

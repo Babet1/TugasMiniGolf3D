@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerController player;
     [SerializeField] Hole hole;
 
+    public AudioSource source;
+    public AudioClip clip;
+
     private void Start()
     {
         //gameOverPanel.SetActive(false);
@@ -19,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         if (hole.Entered && gameOverPanel.activeInHierarchy == false)
         {
+            source.PlayOneShot(clip);
             gameOverPanel.SetActive(true);
             gameOverText.text = "Finished! Shoot Count : " + player.ShootCount;
         }
