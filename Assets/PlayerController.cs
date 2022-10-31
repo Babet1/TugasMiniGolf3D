@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     int shootCount = 0;
 
     public int ShootCount { get => shootCount; }
+    public AudioSource source;
+    public AudioClip clip;
 
     private void Start()
     {
@@ -80,6 +82,8 @@ public class PlayerController : MonoBehaviour
         // shooting
         if(Input.GetMouseButton(0) && isShooting == true)
         {
+            source.PlayOneShot(clip);
+
             var ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit; 
             if(Physics.Raycast(ray,out hit,ballDistance * 2,rayLayer))

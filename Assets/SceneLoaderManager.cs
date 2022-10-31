@@ -28,6 +28,7 @@ public class SceneLoaderManager : MonoBehaviour
        SceneLoader.LoadNextLevel();
     }
 
+   //Quit Game
     public void QuitGame ()
     {
         Debug.Log("Quit!");
